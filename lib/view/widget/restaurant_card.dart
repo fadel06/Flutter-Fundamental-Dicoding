@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:submission_1/model/restaurant.dart';
+import 'package:submission_1/data/response/restaurant_result.dart';
 import 'package:submission_1/utils/styles.dart';
-import 'package:submission_1/view/detail.dart';
+import 'package:submission_1/view/detail_page.dart';
 import 'package:submission_1/view/widget/favorite_button.dart';
 
 class RestaurantCard extends StatelessWidget {
@@ -15,7 +15,7 @@ class RestaurantCard extends StatelessWidget {
       splashColor: Colors.yellow,
       onTap: () {
         Navigator.pushNamed(context, DetailPage.routeName,
-            arguments: restaurant);
+            arguments: restaurant.id);
       },
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
@@ -34,7 +34,7 @@ class RestaurantCard extends StatelessWidget {
             image: DecorationImage(
                 colorFilter: ColorFilter.mode(
                     Colors.black.withOpacity(0.35), BlendMode.multiply),
-                image: NetworkImage(restaurant.picture),
+                image: NetworkImage(restaurant.pictureUrl()),
                 fit: BoxFit.cover)),
         child: Stack(
           children: [

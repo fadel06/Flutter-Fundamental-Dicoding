@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:submission_1/model/menu.dart';
+import 'package:submission_1/data/model/menu.dart';
 import 'package:submission_1/utils/styles.dart';
 import 'package:submission_1/view/widget/food_drink_card.dart';
 

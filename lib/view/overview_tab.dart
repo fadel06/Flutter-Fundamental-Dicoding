@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:submission_1/model/restaurant.dart';
+import 'package:submission_1/data/model/restaurant.dart';
 import 'package:submission_1/utils/styles.dart';
 
 class OverviewTab extends StatelessWidget {

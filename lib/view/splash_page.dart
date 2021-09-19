@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:submission_1/utils/styles.dart';
-import 'package:submission_1/view/home.dart';
+import 'package:submission_1/view/main_page.dart';
 
 class SplashPage extends StatelessWidget {
   static String routeName = '/';
@@ -11,7 +11,7 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Timer(Duration(seconds: 4),
-        () => Navigator.pushReplacementNamed(context, HomePage.routeName));
+        () => Navigator.pushReplacementNamed(context, MainPage.routeName));
 
     return Scaffold(
         body: Center(
