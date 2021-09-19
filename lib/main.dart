@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:submission_1/utils/routes.dart';
 import 'package:submission_1/utils/styles.dart';
-import 'package:submission_1/view/splash.dart';
+import 'package:submission_1/view/splash_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,8 +16,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primaryColor: Colors.blue,
-          // accentColor: primaryDarkColor,
-          // scaffoldBackgroundColor: primaryLightColor,
           visualDensity: VisualDensity.adaptivePlatformDensity,
           textTheme: myTextTheme,
           appBarTheme: AppBarTheme(

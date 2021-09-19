@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:submission_1/model/drink.dart';
-import 'package:submission_1/model/food.dart';
+import 'package:submission_1/data/model/category.dart';
 
 class FoodCard extends StatelessWidget {
-  final List<Food> foods;
+  final List<Category> foods;
   const FoodCard({required this.foods});
 
   Widget _buildTiles() {
@@ -31,7 +30,7 @@ class FoodCard extends StatelessWidget {
 }
 
 class DrinkCard extends StatelessWidget {
-  final List<Drink> drinks;
+  final List<Category> drinks;
   const DrinkCard({required this.drinks});
 
   Widget _buildTiles() {

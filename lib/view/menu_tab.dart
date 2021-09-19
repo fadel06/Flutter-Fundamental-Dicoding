@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:submission_1/model/menu.dart';
+import 'package:submission_1/data/model/menu.dart';
 import 'package:submission_1/view/widget/chip_menu.dart';
 
 class MenutTab extends StatelessWidget {
